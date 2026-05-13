@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BVAI - AI Property Valuation</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      padding: 15px;
+      margin: 12px 0;
+      border-radius: 12px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .apple {
+      background: black;
+    }
+
+    .google {
+      background: #1e8e3e;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>BVAI</h1>
+  <p>AI Property Valuation</p>
+
+  <a class="btn apple"
+     href="https://apps.apple.com/se/app/bvai-ai-bostadsv%C3%A4rdering/id6757990042">
+    Download on App Store
+  </a>
+
+  <a class="btn google"
+     href="https://play.google.com/store/apps/details?id=com.bvai.app">
+    Get it on Google Play
+  </a>
+</div>
+
+<script>
+  const androidLink =
+    "https://play.google.com/store/apps/details?id=com.bvai.app";
+
+  const iosLink =
+    "https://apps.apple.com/se/app/bvai-ai-bostadsv%C3%A4rdering/id6757990042";
+
+  const ua = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/android/i.test(ua)) {
+    window.location.href = androidLink;
+  }
+
+  if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+    window.location.href = iosLink;
+  }
+</script>
+
+</body>
+</html>
